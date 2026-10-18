@@ -46,6 +46,8 @@
   a.prod { padding:8px 16px 8px 8px; }
   a.prod img { width:64px; height:64px; border-radius:14px; object-fit:cover; flex:none; background:#E8F3F0; }
   .price { flex:none; font-weight:800; color:var(--teal); font-size:15px; text-align:right; line-height:1.15; }
+  .gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:-4px; }
+  .gallery img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:14px; border:2px solid var(--line); background:#E8F3F0; }
   .thumb { width:64px; height:64px; flex:none; display:block; }
   .thumb svg { width:100%; height:100%; display:block; }
 
@@ -94,9 +96,15 @@
       <span class="txt">Dispensador de bolsas personalizado<small>Con la raza de tu perro · envío incluido</small></span><span class="price">₡9.000</span>
     </a>
     <a class="btn prod rise" href="https://wa.me/50688436322?text=Hola%203DMENSIA%2C%20quiero%20un%20im%C3%A1n%20personalizado%20de%20mi%20perro" target="_blank" rel="noopener">
-      <span class="thumb" aria-hidden="true"><svg viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#E8F3F0"/><circle cx="32" cy="34" r="20" fill="#1E5A50"/><ellipse cx="17" cy="25" rx="6" ry="11" fill="#174A42" transform="rotate(18 17 25)"/><ellipse cx="47" cy="25" rx="6" ry="11" fill="#174A42" transform="rotate(-18 47 25)"/><circle cx="25" cy="31" r="3" fill="#fff"/><circle cx="39" cy="31" r="3" fill="#fff"/><ellipse cx="32" cy="41" rx="7" ry="5" fill="#34C9A3"/><ellipse cx="32" cy="39" rx="3" ry="2" fill="#0B1414"/></svg></span>
-      <span class="txt">Imanes de tu perro<small>Personalizados con su foto<br>Mediano ₡5.500 · Grande ₡7.500</small></span><span class="price"><small style="font-size:12px;font-weight:700">desde</small><br>₡5.500</span>
+      <img src="img/iman-pitbull.jpg" alt="Imán impreso en 3D de un pitbull" loading="lazy">
+      <span class="txt">Imanes de tu perro<small>Personalizados con su foto<br><span style="white-space:nowrap">Mediano ₡5.500</span> · <span style="white-space:nowrap">Grande ₡7.500</span></small></span><span class="price"><small style="font-size:12px;font-weight:700">desde</small><br>₡5.500</span>
     </a>
+    <div class="gallery rise" aria-label="Imanes hechos con fotos de perros">
+      <img src="img/iman-cachorro.jpg" alt="Imán de perro mestizo" loading="lazy">
+      <img src="img/iman-salchicha.jpg" alt="Imán de perro salchicha" loading="lazy">
+      <img src="img/iman-golden.jpg" alt="Imán de golden retriever" loading="lazy">
+      <img src="img/iman-dalmata.jpg" alt="Imán de salchicha moteado" loading="lazy">
+    </div>
     <a class="btn prod rise" href="https://wa.me/50688436322?text=Hola%203DMENSIA%2C%20quiero%20cotizar%20un%20escaneo%20e%20impresi%C3%B3n%203D" target="_blank" rel="noopener">
       <img src="img/escaneo.jpg" alt="Soporte diseñado a medida para un control" loading="lazy">
       <span class="txt">Escaneo e impresión 3D<small>Repuestos · soportes · prototipos</small></span><span class="arrow">›</span>
